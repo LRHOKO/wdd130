@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+:root {
+    --primary-color: #F2F5EA;
+    --secondary-color: #2C363F;
+    --accent1-color: #bbc7a4;
+    --accent2-color: #E75A7C;
+  
+    --heading-font: 'PT Serif', serif;
+    --paragraph-font: 'PT Serif', serif;
+  
+    --nav-background-color: #ffffff;
+    --nav-link-color: #000000;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #000000;
+  }
+  
+  body {
+  font-family: var(--paragraph-font);
+  padding: 20px;
+
+}
+  
+h2, h3 ,h4, h5, h6 {
+   font-family: var(--heading-font);
+  color: var(--secondary-color)
+}
+
+h1 {
+    font-family: var(--heading-font);   
+    color: var(--primary-color);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+    article {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        max-width: 800px;
+        padding: 20px;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        font-family: var(--paragraph-font);
+        display: flex; 
+        align-items: right;
+       
+      }
+    
+      
+      article p {
+        text-align: left;
+      }
+
+      article img {
+        margin-left: 10px; 
+        margin-right: auto;
+        float: right;
+
+ 
+      }
+  
+header {
+  padding: 10px;
+  background-color: var(--accent1-color);
+}
+
+p {
+  padding: 10px;
+}
+
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sociallinks a {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+  
+  .sociallinks img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
