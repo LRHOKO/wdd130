@@ -63,6 +63,8 @@ h1 {
       }
 
       article img {
+        max-width: 100%;
+        height: auto;
         margin-left: 10px; 
         margin-right: auto;
         float: right;
@@ -71,8 +73,16 @@ h1 {
       }
   
 header {
-  padding: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 5px;
   background-color: var(--accent1-color);
+}
+
+header img{
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 p {
@@ -84,6 +94,12 @@ nav {
   background-color: var(--nav-background-color);
   font-size: 1.2rem;
   display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
 nav a {
@@ -99,12 +115,12 @@ nav a:link, nav a:visited {
 
 nav a:hover {
   color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+  background-color: #f2f2f2;
 }
 
 .sociallinks {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
   }
   
@@ -127,5 +143,64 @@ nav a:hover {
   
   section img {
     display: block;
-    margin-bottom: 10px; /* Adjust the margin as per your design */
+    margin-bottom: 10px; 
   }
+
+.history {
+  padding: 20px;
+  background-color: var(--accent1-color);
+  text-align: center;
+}
+
+.history h2 {
+  margin-bottom: 10px;
+}
+
+.history p {
+  margin-bottom: 20px;
+}
+
+.adventures {
+  padding: 20px;
+  background-color: var(--accent2-color);
+}
+
+.adventures h2 {
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+}
+
+figcaption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+}
