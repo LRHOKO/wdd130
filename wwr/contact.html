@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Contact Us | Dorlon Rafting Company | WDD 130</title>
+        <meta name="description" content="Get in touch with our premier rafting company today! Contact us to book your exhilarating adventure on the rapids. Our experienced team is ready to assist you with any inquiries or reservations. Reach out now and embark on a thrilling rafting experience with us.">
+        <meta name="author" content="Landon Roberts">
+
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/logo.png" alt="Rafting Image" width="200">
+            
+
+            <nav>
+            
+                <a href="index.html">Index</a>
+                <a href="about.html">About</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </header>
+        
+        <main>
+            <div class="container">
+            
+                <section>
+                    <h2>Company Information</h2>
+                    <p>
+                      Address: 123 Main Street, Los Angeles, California, 90001<br>
+                      Phone: (123) 456-7890<br>
+                      Email: Dorlon@raftingcompany.com
+                    </p>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13234.13251313039!2d-118.24567392189371!3d33.97883754705696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c9062226fb1d%3A0xf36457ee888c3600!2sLos%20Angeles%2C%20CA%2090001!5e0!3m2!1sen!2sus!4v1685578546912!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    </div>
+                  </section>
+                  
+
+                  <section>
+                    <h2>Meet Our Team</h2>
+                    <div class="employee-profile">
+                      <img src="images/employee1.jpg" alt="Employee 1">
+                      <p class="caption">Emily Smith - Rafting Guide</p>
+                    </div>
+                    <div class="employee-profile">
+                      <img src="images/employee2.jpg" alt="Employee 2">
+                      <p class="caption">Jane Herald - Customer Support</p>
+                    </div>
+                    <div class="employee-profile">
+                      <img src="images/employee3.jpg" alt="Employee 3">
+                      <p class="caption">Mike Johnson - Operations Manager</p>
+                    </div>
+                  </section>
+          </div>
+        
+            <section class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="submit_form.php" method="POST">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+              
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="purpose">Purpose of Message:</label>
+                  <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
+                  <label for="general-inquiry">General Inquiry</label>
+                  <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
+                  <label for="reservation-question">Reservation Question</label>
+                  <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
+                  <label for="website-suggestion">Website Suggestion</label>
+              
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+              
+                  <label for="newsletter">Please subscribe me to the monthly newsletter:</label>
+                  <input type="checkbox" id="newsletter" name   ="newsletter">
+                  <input type="submit" value="Submit">
+                </form>
+
+            </section>
+        
+        </main>
+        
+        <footer class="footer">
+            <p>©️2023 | Dorlon Rafting Company | Landon Roberts</p>
+            <a href="images/Contact-wireframe.png" target="_blank" rel="noopener noreferrer">Contact Us Wireframe</a>
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="Facebook">        
+                </a>
+
+                <a href="https://twitter.com">
+                    <img src="images/twitter.svg" alt="Twitter">        
+                </a>
+                
+                <a href="https://instagram.com">
+                    <img src="images/instagram.svg" alt="Instagram">        
+                </a>
+
+            </nav>
+        </footer>
+
+    </body>
+</html>
